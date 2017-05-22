@@ -1,33 +1,97 @@
+/*General Start*/
 * {
   font-family: Helvetica;
-  font-size: 22px;
   color: seashell;
-  background-color: black;
   opacity: 0.9;
   text-align: center;
-  border: 1px solid red;
 }
 
-/* Header Section */
-#header {
+body, html {
+  background-color: black;
+}
+/*General End*/
+
+/*Re-Used Start*/
+.section {
+  width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.boxsection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box {
+  width: 300px;
+  background-color: black;
+}
+
+.box p{
+  padding-top: 10px;
+}
+/*Re-Used End*/
+
+/*Text Start*/
+h2 {
+
+}
+h3 {
+
+}
+h4 {
+
+}
+/*Text End*/
+
+/*Header Section Start*/
+header {
   position: fixed;
   width: 100%;
+  height: 69px;
   border-bottom: 1px solid seashell;
+  background-color: black;
   z-index: 1;
-  padding-left: 10px;
 }
 
-#header span {
-  text-align: right;
+#logo {
+  margin: 10px;
 }
 
-/* Our Mission Section */
-#mission .container {
-  background-image: url('../resources/media/img-mission-background.jpg');
+nav a {
+  display: inline-block;
+  padding-right: 20px;
+  line-height: 69px;
+}
+/*Header Section End*/
+
+/*Our Mission Section Start*/
+#mission {
+  height: 700px;
 }
 
-/* Tea of the Month Section */
-#featured .container {
+#mission {
+  background-image: url('../media/img-mission-background.jpg');
+}
+
+#mission .content {
+  position: relative;
+  top: 50%;
+  background-color: black;
+}
+/*Our Mission Section End*/
+
+/*Tea of the Month Section Start*/
+#featured {
   width: 1000px;
 }
 
@@ -35,24 +99,38 @@
   width: 300px;
   height: 200px;
 }
+/*Tea of the Month Section End*/
 
-/* Locations Section */
-#locations .container {
-  background-image: url('../resources/media/img-locations-background');
+/*Locations Section Start*/
+#locations {
+  background-image: url('../media/img-locations-background.jpg');
+  padding: 40px 0;
+  height: 500px;
 }
-
-#location .box {
+#locations .box {
   width: 300px;
-  display: inline-block;
+  height: 300px;
+  margin-top: 15px;
 }
 
-/* Contact Information Section */
+#locations p {
+  opacity: 1;
+}
+/*Locations Section End*/
+
+/*Contact Information Section Start*/
 #contact {
-  text-align: center;
+
+}
+/*Contact Information Section End*/
+
+/*Footer Section Start*/
+footer {
+
 }
 
-/* Footer Section */
-#footer {
+footer p {
   text-align: left;
   padding-left: 20px;
 }
+/*Footer Section End*/
